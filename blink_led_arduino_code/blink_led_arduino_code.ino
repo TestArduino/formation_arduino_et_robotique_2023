@@ -1,13 +1,12 @@
 const int led 10 ;
 void setup() {
   pinMode(led,OUTPUT);
-
+  Serial.begin(9600);
 }
 
 void loop() {
   digitalWrite(led,HIGH);
-  delay(1000);
+  delay(4100);
    digitalWrite(led,LOW);
-  delay(1000);
-  
+  Serial.print("hello blink led");  
 }
